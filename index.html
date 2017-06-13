@@ -41,6 +41,9 @@
 	a:link, a:active, a:visited { border-bottom:1px solid transparent; padding-bottom:3px; color: #000; text-decoration:none; -webkit-transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; transition:all 0.8s;  }
 	a:hover { opacity: .8.5; font-style:none; -webkit-transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; transition:all 0.8s; }
 
+header{display:none;width:100%;background-color:#FFF;}
+header .primary-header{border-bottom:1px solid #C6C6C6;padding-top:0.625em;padding-bottom:0.5em;}@media (min-width:50em){header .primary-header{padding-top:1.5em;padding-bottom:0;}}
+
 nav.main-nav{width:100%;float:left;margin-left:0;margin-right:0;display:none;}
 @media(min-width:40.063em){nav.main-nav{width:54.90196%;float:left;margin-right:1.47059%;}}
 @media (min-width:50em){nav.main-nav{display:block;}}
@@ -50,14 +53,22 @@ nav.main-nav #main-menu li.active-trail{background:url();background-image:url(),
 @media (min-width:64.063em){nav.main-nav #main-menu li{padding:0 1.5%;}}
 nav.main-nav #main-menu li a{padding-left:0.2em;padding-right:0.2em;}nav.main-nav #main-menu li .nolink{cursor:pointer;}nav.icon-nav{text-transform:uppercase;font-family:"Freight Sans", sans-serif; text-align:center; font-size:0.75em; font-weight:bold; letter-spacing:0.17em; line-height:1.7; max-height:30px; overflow:visible; width:100%; float:left; margin-left:0; margin-right:0; display:none;}
 
+
+
 #side { border:0px solid #ccc; width:250px; position:fixed; left:100px; top:165px; }
 
 	</style>
 	</head>
+ <header class="site-header">
 
+      <div class="primary-header">
+        <div class="container">
+            <a href="/">
+             Angel Callander
+            </a>
+          </div>
 
 <nav class="main-nav">
-	Angel Callander
               <ul id="main-menu" class="links inline"><li class="menu-2141 first"><a href="/about.html">About</a></li>
 <li class="menu-10296"><a href="/work.html">Work</a></li>
 <li class="menu-2996"><a href="/cv.html">CV</a></li>
