@@ -23,8 +23,18 @@
 	        * {
 	            -webkit-box-sizing: border-box;
 	            -moz-box-sizing: border-box;
-	            box-sizing: border-box;
 	        }
+
+			html {
+			  height: auto;
+			  box-sizing: border-box;
+			}
+
+			*,
+			*:before,
+			*:after {
+			  box-sizing: inherit;
+			}
 
 	        body {
 				color: #333;
@@ -36,6 +46,9 @@
 				font-size: 12px;
 	            margin: 0;
 	            padding: 36px 0;
+			  position: relative;
+			  padding-bottom: 6rem;
+			  min-height: 100%;
 	        }
 	
 			main {
@@ -143,12 +156,9 @@
 				padding-bottom: 10px;
 	        }
 	
-	.photo {
-		margin-top: -80px;
-	}
-	
+
 	#photo {
-		font-size: 8px;
+		font-size: 9px;
 		font-family: 'Open Sans', sans-serif;
 	}
 	
@@ -175,20 +185,48 @@
 			#about, #work, #cv, #contact {
 			    display:none;
 			}
+
+
+			.demo {
+			  margin: 0 auto;
+			  padding-top: 64px;
+			  max-width: 640px;
+			  width: 94%;
+			}
+
+			.demo h1 {
+			  margin-top: 0;
+			}
 	
-	footer {
-		
-	
-	}
-	
-	.footer-copyright {
-		
-	}
+/*** Footer Styles*/
+
+			.footer {
+			  position: fixed;
+			  right: 0;
+			  bottom: 0;
+			  top: 100;
+			  left: 0;
+			  padding: 1rem;
+			  background-color: #fff;
+			  text-align: right;
+			  font-size: 9px;
+			}
 	
 	img {
-		max-width: 300px;
+		max-width: 250px;
 		max-height: auto;
 	}
+	
+	table, th, td {
+	    border: 0px;
+	    border-collapse: collapse;
+	}
+	th, td {
+	    padding: 8px;
+	    text-align: left;  
+	  	text-decoration: none;
+	}
+	
 	</style>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>   
@@ -216,16 +254,23 @@
 
 
 <div id="about">
-	Born 1991 in Canada. <br><br>
+	<table>
+	<tr>
+		<td>
+	Born 1991 in Canada. <br>
 
-Currently based in Berlin, 
-Working languages: English, French, German.
+<p>Currently based in Berlin, Angel is a candidate in the MA Kunst- und Bildgeschichte program at the Humboldt-Universität zu Berlin. She is currently writing her Master's thesis.</p>
+<p>
+	
+<p>Working languages: English, French, German.</p>
 <br><br>
 <a href="https://hu-berlin.academia.edu/AngelCallander">Academia.edu profile</a>
-
-<div class="photo" align="right"><img src="./1 copy.jpeg"></img><br>
-	<caption id="photo">Photo by <a href="http://www.sebastiancvitanic.com/">Sebastian Cvitanic</a></caption></div>
-		</div>
+</td>
+<td class="photo" align="right"><p><img src="./1 copy.jpeg"></img></p>
+	<p id="photo" align="center">Photo by <a href="http://www.sebastiancvitanic.com/">Sebastian Cvitanic</a></p></td>
+	</tr>
+		</table>
+</div>
 
 <div id="work">
 	<b>Publication</b>
@@ -238,7 +283,7 @@ Working languages: English, French, German.
 <ul>
 	<li>Nick Verstand, <i>ANIMA</i>, 2014
 	<li><a href="https://2017.adaf.gr/events/pov/">Nick Verstand, <i>POV</i>, 2017</a>
-	<li>Transcription for subtitles (German and English): Thomas Bratzke, ><i>Schreiben mit Jungpionieren</i>, video, 1 hour. Exhibited at Galerie im Turm, Berlin, 11.11.2016 - 15.01.2017.
+	<li>Transcription for subtitles (German and English): Thomas Bratzke, <i>Schreiben mit Jungpionieren</i>, video, 1 hour. Exhibited at Galerie im Turm, Berlin, 11.11.2016 - 15.01.2017.
 	<li>Transcriptions, translations and research for CTM Festival 2017 exhibition "<a href="http://www.ctm-festival.de/archive/festival-editions/ctm-2017-fearangerlove/transfer/exhibition/">Critical Constellations of the Audio-Machine in Mexico</a>", curated by Carlos Prieto Acevedo at Kunstraum Kreuzberg/Bethanien, Berlin, 28.01.2017 - 19.03.2017.
 </ul>
 <br><br>
@@ -259,12 +304,72 @@ Working languages: English, French, German.
 		</div>
 
 <div id="cv">
-	Condensed version: <br><br>
+<table>
+	<tr>
+	<th>
+	<b>Education</b></th></tr>
+	<tr>
+		<td>October 2015 - present</td>
+		<td>MA Kunst- und Bildgeschichte<br>Humboldt-Universität zu Berlin, DE</td>
+</tr>
+<tr>
+	<td>April - September 2014</td>
+	<td>Language and Literature Studies (exchange semester)<br>Universität Konstanz, DE</td>
+</tr>
+<tr>
+	<td>September 2009 - April 2014</td>
+	<td>BA Honours Art History and German Studies<br>University of Guelph, CA</td>
+</tr>
+<tr>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+</tr>
+<tr>
+	<th><b>Work experience and internships</b></th>
+</tr>
+<tr>
+	<td>December 2016 - March 2017</td>
+	<td><i>Project assistant</i><br>Kunstraum Kreuzberg/Bethanien, Berlin, DE</td>
+</tr>
+<tr>
+	<td>March 2014 - June 2016</td>
+	<td><i>Member of the Board of Directors</i><br>Ed Video Media Arts Centre, Guelph, CA</td>
+</tr>
+<tr>
+	<td>September 2013 - April 2014</td>
+	<td><i>Assistant Gallery Coordinator</i><br>Zavitz Gallery, Guelph, CA</td>
+</tr>
+<tr>
+	<td>May - August 2013</td>
+	<td><i>Collections Management Assistant</i><br>Art Gallery of Guelph, Guelph, CA</td>
+</tr>
+<tr>
+	<td>January 2013 - April 2014</td>
+	<td><i>Gallery Assistant</i><br>Art Gallery of Guelph, Guelph, CA</td>
+</tr>
+<tr>
+	<td>September - December 2012</td>
+	<td><i>Project intern</i><br>Art Gallery of Guelph, Guelph, CA</td>
+</tr>
+<tr>
+	<td>June - September 2009</td>
+	<td><i>Collections Management Assistant</i><br>Grimsby Public Art Gallery, Grimsby, CA</td>
+</tr>
+
+</table>
+		
+	<br>
 		</div>
 
 <div id="contact">
 	<a href="mailto:hi@angelcallander.com">hi@angelcallander.com</a>
 		</div>
+
+
+			<div class="footer">
+
+		© Angel Callander, 2017
+			</div>
+
 
 <script type="text/javascript">
 $(document).ready(function(){
