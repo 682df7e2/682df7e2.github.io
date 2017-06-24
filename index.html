@@ -1,43 +1,207 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<body>	
-<head>
-	<title>angelcallander.com</title>
-	<style type="text/css">
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i);
+<html>
+    <head>
+        <!-- 
+        
+        theme:      Gravity
+        version:    1.0 (March 1, 2017)
+        from:       colorlib.com
+        
+        -->
+        <meta charset="UTF-8">
+        
+        <title>Angel Callander</title>
+        
+       
+        
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic" rel="stylesheet">
 
+		 <style type="text/css">
 
+	        /* =Base styles=
+	-------------------------------------------------------------- */
+	        * {
+	            -webkit-box-sizing: border-box;
+	            -moz-box-sizing: border-box;
+	            box-sizing: border-box;
+	        }
+
+	        body {
+				color: #333;
+				background-color: #fff;
+				background-image: url('');
+				background-position: center center;
+				background-attachment: fixed;
+				font-family: "Open Sans", sans-serif;
+				font-size: 12px;
+	            margin: 0;
+	            padding: 36px 0;
+	        }
 	
-	body{ background-color:#fff; background-image:url(); background-position: center; background-attachment: fixed; background-repeat: repeat; color:#000; font-family: 'Open Sans', sans-serif; font-size:16px; line-height: 20px; text-align:justify;}
-	a:link, a:active, a:visited { border-bottom:1px solid transparent; padding-bottom:3px; color: #000; text-decoration:none; -webkit-transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; transition:all 0.8s;  }
-	a:hover { text-transform: 400i; opacity: .8.5; font-style:none; -webkit-transition:all 0.8s; -moz-transition:all 0.8s; -ms-transition:all 0.8s; -o-transition:all 0.8s; transition:all 0.8s; }
+			main {
+	            max-width: auto;
+	        }
 
-header{display:none;width:100%;background-color:#FFF;}
-header .primary-header{border-bottom:1px solid #C6C6C6;padding-top:0.625em;padding-bottom:0.5em;}@media (min-width:50em){header .primary-header{padding-top:1.5em;padding-bottom:0;}}
-header.site-header--fixed{position:fixed;-webkit-transform:translateZ(0);z-index:200;left:0;top:0;} 
-header.site-header--fixed{top:30px;}
+	        a {
+	            text-transform: none;
+	        }
+			a:hover {
+				text-transform: none;
+				font-weight: 400;
+				font-style: normal;
+				color:  #808082;
 
-nav.main-nav{width:100%;float:left;margin-left:0;margin-right:0;display:none;}
-@media(min-width:40.063em){nav.main-nav{width:54.90196%;float:left;margin-right:1.47059%;}}
-@media (min-width:50em){nav.main-nav{display:block;}}
-nav.main-nav #main-menu{text-transform:uppercase;font-family:"Freight Sans",sans-serif;text-align:center;font-size:0.75em;font-weight:bold;letter-spacing:0.17em;margin:0;padding-top:4px;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-justify-content:center;justify-content:center;-ms-flex-pack:center;}
-nav.main-nav #main-menu li{padding:0 1%;-webkit-flex:0 1 auto;-moz-box-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;min-height:45px;display:inline-block;}
-nav.main-nav #main-menu li.active-trail{background:url();background-image:url(),none;background-size:11px 5px;background-repeat:no-repeat;background-position:bottom center;}
-@media (min-width:64.063em){nav.main-nav #main-menu li{padding:0 1.5%;}}
-nav.main-nav #main-menu li a{padding-left:0.2em;padding-right:0.2em;}nav.main-nav #main-menu li .nolink{cursor:pointer;}nav.icon-nav{text-transform:uppercase;font-family:"Freight Sans", sans-serif; text-align:center; font-size:0.75em; font-weight:bold; letter-spacing:0.17em; line-height:1.7; max-height:30px; overflow:visible; width:100%; float:left; margin-left:0; margin-right:0; display:none;}
-.container {border:0px solid #ccc; width:250px; position:fixed; left:px; top:30px;}
+			}
+
+	        h1,h2,h3,h4,h5,h6 {
+	            font-family: 'Open Sans', sans-serif;
+	            font-weight: 700;
+	        }
+	
+			 .title {
+		            color: #000;
+		            font-weight: 400;
+		            float: left;
+		            text-transform: uppercase;
+		            font-size: 19px;
+					font-style: italic;
+		            line-height: 20px;
+		            padding: 10px 20px;
+		            text-decoration: none;
+					margin-top: -5px;
+		        }
+		        .title:hover {
+		            background-color: rgba(0,0.05);
+		            text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 400;
+					font-style: italic;
+					color: #808082;
+		        }
+	}
+
+	        ul {
+				list-style-type: none;
+				padding-left: 0;
+	        }
 
 
-#side { border:0px solid #ccc; width:250px; position:fixed; left:100px; top:165px; }
+	        /* =Header styles=
+	-------------------------------------------------------------- */
+	        header {
+				background-color: #fff;
+				padding: 0;
+				max-height: 25px;
+				margin: 0 auto;
+				position: relative;
+				border-bottom: solid black 0px;
+				padding-bottom: 7px;
+				margin-left: 10px;
+	        }
+	        .header-navbar {
+				text-align: left;
+				margin-left: 10px;
+				clear: both;
+				width: 100%;
+				margin: 0 auto;
+				padding-bottom: 7px;
+				border-bottom: solid black 0px;
+				text-transform: uppercase;
+	        }
+	        ul.header-links {
+	            margin: 0 auto;
+				float: center;
+				margin-left: 100px;
+				padding-bottom: 7px;
+				text-transform: uppercase;
+	        }
+	        ul.header-links li {
+	            text-align: left;  
+				float: center;
+	            display: inline-block;
+	            padding: 10px 10px;
+				margin-left: 100px;
+				padding-bottom: 7px;
+				text-transform: uppercase;
+	        }
+	        ul.header-links li:hover {
+	            background-color: rgba(0,0.05);
+	        }
+	        .header-link {
+	            font-size: 12px;
+	            color: #000;
+				margin-top: 9px;
+				text-transform:uppercase;
+	        }
+	        
+	        nav {
+				clear: both;
+				padding-bottom: 10px;
+	        }
+	
+			.content{
+			    width:100%;
+			    height:auto;
+				position: absolute;
+				margin-top: 40px;
+				border-top: solid black 1px;
+			}
 
+
+			.inside {
+				width: 90%;
+				float: center;
+				position:absolute;
+				margin-top: 10px;
+				padding: 70px;
+				text-align: left;
+			
+			}
+			
+			#about, #work, #cv, #contact {
+			    display:none;
+			}
+	
 	</style>
-	</head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	</head>   
+	<body>
+		<header>
+		<nav class="header-navbar" style="border-bottom: 1px;">
+            
+            <a class="title" href="/">Angel Callander</a>
+            <ul class="header-links">
+                <a class="header-link" href="/about.html" target=""><li>About</li></a>
+				<a class="header-link" href="#work"><li>Work</li></a>
+                <a id="open_menu" class="header-link" href="#cv"><li>CV</li></a>
+				<a id="open_menu" class="header-link" href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+       
 
-            <a href="/">
-             <h1>Angel Callander</h1>
-            </a><br><br><br>
-<u><a href="mailto:hi@angelcallander.com">hi@angelcallander.com</a></u>
+    </header>
 
+<div class="content">
+	<div class="inside">
+	
+	</div>
+</div>
 
-</body>
+<div id="about"></div>
+<div id="work"></div>
+<div id="cv"></div>
+<div id="contact"><a href="mailto:hi@angelcallander.com">hi@angelcallander.com</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a').on('click',function(){
+        var aID = $(this).attr('href');
+        var elem = $(''+aID).html();
+        
+        $('.inside').html(elem);
+    });
+});
+</script>
+
+   </body>
 </html>
