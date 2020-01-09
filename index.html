@@ -227,6 +227,23 @@
 	  	text-decoration: none;
 	}
 	
+	
+/***Mobile Optimization*/
+	@viewport {
+	  width: device-width ;
+	  zoom: 1.0 ;
+	}
+	
+	@media screen and (max-width: 1020px) {
+	  #container, #header, #content, #footer, #about {
+	    float: none;
+	    width: auto;
+	  }
+	 #subtitle, #share, #slider, #sidebar{
+	    display:none;
+	  }
+	  p{ font-size: 2em; }
+	}	
 	</style>
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>   
